@@ -5,7 +5,7 @@ using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace EDC.DesignPattern.Builder
+namespace EDC.DesignPattern.FactoryMethod
 {
     public class AppConfigHelper
     {

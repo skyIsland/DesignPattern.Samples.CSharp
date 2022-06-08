@@ -59,6 +59,8 @@
     <Compile Include="v2\ILogger.cs" />
     <Compile Include="v2\ILoggerFactory.cs" />
     <Compile Include="v3\DatabaseLoggerFactory.cs" />
+    <Compile Include="v3\FuckWayneLogger.cs" />
+    <Compile Include="v3\FuckWayneLoggerFactory.cs" />
     <Compile Include="v3\LoggerFactory.cs" />
   </ItemGroup>
   <ItemGroup>
