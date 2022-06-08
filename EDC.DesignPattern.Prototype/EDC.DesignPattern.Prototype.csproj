@@ -54,6 +54,7 @@
     <Compile Include="PrototypeManager\FAR.cs" />
     <Compile Include="PrototypeManager\OfficeDocument.cs" />
     <Compile Include="PrototypeManager\PrototypeManager.cs" />
+    <Compile Include="PrototypeManager\Bread.cs" />
     <Compile Include="PrototypeManager\SRS.cs" />
   </ItemGroup>
   <ItemGroup>

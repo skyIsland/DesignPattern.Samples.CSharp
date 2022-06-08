@@ -86,7 +86,7 @@ namespace EDC.DesignPattern.Prototype
         {
             PrototypeManager pm = PrototypeManager.GetInstance();
 
-            OfficeDocument doc1, doc2, doc3, doc4;
+            OfficeDocument doc1, doc2, doc3, doc4, doc5;
             doc1 = pm.GetOfficeDocumentByKey("FAR");
             doc1.Display();
             doc2 = pm.GetOfficeDocumentByKey("FAR");
@@ -100,6 +100,10 @@ namespace EDC.DesignPattern.Prototype
             doc4.Display();
 
             Console.WriteLine("是否是同一个SRS：{0}", object.ReferenceEquals(doc3, doc4));
+
+            doc5 = pm.GetOfficeDocumentByKey("Bread");
+            doc5.Display();
+
         }
     }
 }

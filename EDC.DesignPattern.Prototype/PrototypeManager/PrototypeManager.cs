@@ -25,6 +25,7 @@ namespace EDC.DesignPattern.Prototype
         {
             dictOD.Add("FAR", new FAR());
             dictOD.Add("SRS", new SRS());
+            dictOD.Add("BREAD", new Bread());
         }
 
         public void AddOfficeDocument(string key, OfficeDocument doc)
