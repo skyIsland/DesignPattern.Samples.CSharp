@@ -51,6 +51,7 @@
     <Compile Include="GameRoleDemo\AngelBuilder.cs" />
     <Compile Include="GameRoleDemo\Actor.cs" />
     <Compile Include="GameRoleDemo\ActorBuilder.cs" />
+    <Compile Include="GameRoleDemo\BreadBuilder.cs" />
     <Compile Include="GameRoleDemo\HeroBuilder.cs" />
     <Compile Include="PattenSample\Builder.cs" />
     <Compile Include="PattenSample\Director.cs" />
