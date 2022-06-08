@@ -50,7 +50,11 @@
     <Compile Include="AbstractFactory\ISkinFactory.cs" />
     <Compile Include="AbstractProduct\ITextField.cs" />
     <Compile Include="AppConfigHelper.cs" />
+    <Compile Include="ConcreteFactory\BreadSkinFactory.cs" />
     <Compile Include="ConcreteFactory\SummerSkinFactory.cs" />
+    <Compile Include="ConcreteProduct\BreadButton.cs" />
+    <Compile Include="ConcreteProduct\BreadComboBox.cs" />
+    <Compile Include="ConcreteProduct\BreadTextField.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ConcreteProduct\SpringButton.cs" />
