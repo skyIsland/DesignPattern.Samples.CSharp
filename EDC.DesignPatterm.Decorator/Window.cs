@@ -38,4 +38,15 @@ namespace EDC.DesignPatterm.Decorator
             Console.WriteLine("显示列表框!");
         }
     }
+
+    /// <summary>
+    /// 列表框类：具体构件类
+    /// </summary>
+    public class Bread : Component
+    {
+        public override void Display()
+        {
+            Console.WriteLine("显示Bread!");
+        }
+    }
 }

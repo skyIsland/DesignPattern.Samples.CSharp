@@ -49,4 +49,26 @@ namespace EDC.DesignPatterm.Decorator
             Console.WriteLine("为构件增加黑色边框!");
         }
     }
+
+    /// <summary>
+    /// 背景颜色装饰类：具体装饰类
+    /// </summary>
+    public class BgColorDecorator : ComponentDecorator
+    {
+        public BgColorDecorator(Component component) : base(component)
+        {
+
+        }
+
+        public override void Display()
+        {
+            this.SetScrollBar();
+            base.Display();
+        }
+
+        public void SetScrollBar()
+        {
+            Console.WriteLine("为构件增加背景颜色!");
+        }
+    }
 }
