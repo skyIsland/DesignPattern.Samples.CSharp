@@ -53,6 +53,7 @@ namespace EDC.DesignPattern.Composite
             AbstractFile folder2 = new Folder("图像文件");
             AbstractFile folder3 = new Folder("文本文件");
             AbstractFile folder4 = new Folder("视频文件");
+            AbstractFile folder5 = new Folder("文档文件");
 
             AbstractFile image1 = new ImageFile("小龙女.jpg");
             AbstractFile image2 = new ImageFile("张无忌.gif");
@@ -62,6 +63,9 @@ namespace EDC.DesignPattern.Composite
 
             AbstractFile video1 = new VideoFile("笑傲江湖.rmvb");
             AbstractFile video2 = new VideoFile("天龙八部.mp4");
+
+            AbstractFile docx1 = new WordFile("Bread.docx");
+
 
             folder2.Add(image1);
             folder2.Add(image2);
@@ -78,7 +82,10 @@ namespace EDC.DesignPattern.Composite
 
             //folder1.KillVirus();
 
-            folder3.KillVirus();
+            //folder3.KillVirus();
+
+            folder5.Add(docx1);
+            folder5.KillVirus();
         }
         #endregion
     }

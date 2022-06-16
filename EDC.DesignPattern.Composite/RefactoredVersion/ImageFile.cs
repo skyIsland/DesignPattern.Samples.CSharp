@@ -104,4 +104,35 @@ namespace EDC.DesignPattern.Composite.RefactoredVersion
             Console.WriteLine("**** 对视频文件‘{0}’进行杀毒", name);
         }
     }
+
+    public class WordFile : AbstractFile
+    {
+        private string name;
+
+        public WordFile(string name)
+        {
+            this.name = name;
+        }
+
+        public override void Add(AbstractFile file)
+        {
+            throw new NotImplementedException();
+        }
+
+        public override AbstractFile GetChild(int index)
+        {
+            throw new NotImplementedException();
+        }
+
+        public override void KillVirus()
+        {
+            // 此处模拟杀毒操作
+            Console.WriteLine("**** 对Doc文件‘{0}’进行杀毒", name);
+        }
+
+        public override void Remove(AbstractFile file)
+        {
+            throw new NotImplementedException();
+        }
+    }
 }
