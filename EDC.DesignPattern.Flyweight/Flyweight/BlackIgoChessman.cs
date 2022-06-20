@@ -23,4 +23,13 @@ namespace EDC.DesignPattern.Flyweight
             return "白色";
         }
     }
+
+    // 具体享元类C
+    public class RedIgoChessman : IgoChessman
+    {
+        public override string GetColor()
+        {
+            return "红色";
+        }
+    }
 }

@@ -20,8 +20,12 @@ namespace EDC.DesignPattern.Flyweight
             ht = new Hashtable();
             IgoChessman blackChess = new BlackIgoChessman();
             ht.Add("b", blackChess);
+
             IgoChessman whiteChess = new WhiteIgoChessman();
             ht.Add("w", whiteChess);
+
+            IgoChessman redChess = new RedIgoChessman();
+            ht.Add("r", redChess);
         }
 
         public static IgoChessmanFactory GetInstance()
