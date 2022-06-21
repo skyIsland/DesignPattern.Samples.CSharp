@@ -12,15 +12,23 @@ namespace EDC.DesignPattern.Observer
         {
             // Step1.定义观察者对象
             AllyControlCenter acc = new ConcreteAllyControlCenter("金庸群侠");
+
             // Step2.定义4个观察者对象
             IObserver playerA = new Player() { Name = "杨过" };
             acc.Join(playerA);
+
             IObserver playerB = new Player() { Name = "令狐冲" };
             acc.Join(playerB);
+
             IObserver playerC = new Player() { Name = "张无忌" };
             acc.Join(playerC);
+
             IObserver playerD = new Player() { Name = "段誉" };
             acc.Join(playerD);
+
+            IObserver playerE = new PlayerB() { Name = "段誉B" };
+            acc.Join(playerE);
+
             // Step3.当某盟友遭受攻击
             playerA.BeAttacked(acc);
 
