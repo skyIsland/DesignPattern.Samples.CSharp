@@ -16,11 +16,14 @@ namespace EDC.DesignPattern.ChainOfResponsibility
             Approver ashin = new VicePresident("Ashin");
             Approver anya = new President("Anya");
             Approver meeting = new Congress("Congress");
+            Approver bread = new AssistantManager("bread");
 
             andy.SetSuccessor(jacky);
             jacky.SetSuccessor(ashin);
             ashin.SetSuccessor(anya);
             anya.SetSuccessor(meeting);
+            meeting.SetSuccessor(bread);
+
             // 构造采购请求单并发送审批请求
             PurchaseRequest request1 = new PurchaseRequest(45000.00,
                 "MANULIFE201706001",
@@ -41,6 +44,11 @@ namespace EDC.DesignPattern.ChainOfResponsibility
                 "MANULIFE201706004",
                 "租用新临时办公楼");
             andy.ProcessRequest(request4);
+
+            PurchaseRequest request5 = new PurchaseRequest(400000.00,
+                "MANULIFE201706005",
+                "购买服务器");
+            andy.ProcessRequest(request5);
 
             Console.ReadKey();
         }

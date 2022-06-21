@@ -149,4 +149,28 @@ namespace EDC.DesignPattern.ChainOfResponsibility
             }
         }
     }
+
+    /// <summary>
+    /// 副经理：具体处理者
+    /// </summary>
+    public class AssistantManager : Approver
+    {
+        public AssistantManager(string name) : base(name)
+        {
+        }
+
+        public override void ProcessRequest(PurchaseRequest request)
+        {
+            if (request.Amount < 50000)
+            {
+                // 处理请求
+                Console.WriteLine("副经理 {0} 审批采购单：{1}，金额：{2} 元，采购目的：{3}。",
+                    this.name, request.Number, request.Amount, request.Purpose);
+            }
+            else
+            {
+                this.successor.ProcessRequest(request);
+            }
+        }
+    }
 }
