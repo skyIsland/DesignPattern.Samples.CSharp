@@ -14,6 +14,7 @@ namespace EDC.DesignPattern.Proxy
         private RealSearcher searcher = new RealSearcher(); // 维持一个对真是主题的引用
         private AccessValidator validator;
         private Logger logger;
+        private BreadNotic breadNotic;
 
         public string DoSearch(string userID, string keyword)
         {
@@ -21,6 +22,7 @@ namespace EDC.DesignPattern.Proxy
             {
                 string result = searcher.DoSearch(userID, keyword);
                 this.Log(userID);
+                this.Notic(userID);
                 return result;
             }
 
@@ -45,6 +47,16 @@ namespace EDC.DesignPattern.Proxy
         {
             logger = new Logger();
             logger.Log(userID);
+        }
+
+        /// <summary>
+        /// 创建通知类并调用Notic()方法实现通知
+        /// </summary>
+        /// <param name="userID"></param>
+        public void Notic(string userID)
+        {
+            breadNotic = new BreadNotic();
+            breadNotic.Notic(userID);
         }
     }
 }

@@ -9,7 +9,7 @@ namespace EDC.DesignPattern.Proxy
     /// <summary>
     /// 真是主题类：具体查询器
     /// </summary>
-   public  class RealSearcher
+   public  class RealSearcher: ISearcher
     {
         /// <summary>
         /// 模拟查询商务信息

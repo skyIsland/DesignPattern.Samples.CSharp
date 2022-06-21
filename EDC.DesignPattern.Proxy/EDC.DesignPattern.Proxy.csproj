@@ -47,6 +47,7 @@
   <ItemGroup>
     <Compile Include="AppConfigHelper.cs" />
     <Compile Include="Proxy\ProxySearcher.cs" />
+    <Compile Include="RealSubject\BreadNotic.cs" />
     <Compile Include="RealSubject\RealSearcher.cs" />
     <Compile Include="RealSubject\Logger.cs" />
     <Compile Include="RealSubject\AccessValidator.cs" />
